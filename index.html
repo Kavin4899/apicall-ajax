@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1>Container Freight Station</h1>
+    </div>
+    <div class="container py-2">
+        <form onsubmit="return false">
+            <div class="row">
+                <div class="col-4">
+                    <label>Name</label><span class="text-danger">*</span>
+                    <input type="text" class="form-control border border-secondary" id="name" placeholder=" User Name"
+                        name="name">
+                </div>
+                <div class="col-4">
+                    <div>
+                        <label>Port</label><span class="text-danger">*</span>
+                    </div>
+                    <div class="">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="chni"
+                                value="Chennai">
+                            <label class="form-check-label" for="inlineRadio1">Chennai</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="chni1"
+                                value="Mumbai">
+                            <label class="form-check-label" for="inlineRadio2">Mumbai</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="chin2"
+                                value="Mudra">
+                            <label class="form-check-label" for="inlineRadio3">Mudra</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label>No of Free Days</label><span class="text-danger">*</span>
+                    <input type="number" class="form-control border border-secondary" id="noday"
+                        placeholder=" User Name" name="name">
+                </div>
+                <div class="col-4 mt-3">
+                    <label>Email</label><span class="text-danger">*</span>
+                    <input type="email" class="form-control border border-secondary" id="mail" placeholder=" User Name"
+                        name="name">
+                </div>
+                <div class="col-4 mt-3">
+                    <label>Address</label><span class="text-danger">*</span>
+                    <input type="" class="form-control border border-secondary" id="addr" placeholder=" User Name"
+                        name="name">
+                </div>
+                <div class="col-4 mt-3">
+                    <label>Phone</label><span class="text-danger">*</span>
+                    <input type="number" class="form-control border border-secondary" id="pho" placeholder=" User Name"
+                        name="name">
+                </div>
+                <div class="col-4 mt-3">
+                    <div>
+                        <label>Status</label><span class="text-danger">*</span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="Status"
+                            value="Active">
+                        <label class="form-check-label" for="inlineRadio5">Active</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="Status1"
+                            value="In-Active">
+                        <label class="form-check-label" for="inlineRadio6">In Active</label>
+                    </div>
+                </div>
+                <div class="col-4 offset-9">
+                    <button type="submit" onclick="validateForm()" class="btn btn-success mt-3 you">submit</button>
+                  <a href="index1.html"> <button type="cancel" class="btn btn-danger mt-3 you">Cancel</button></a> 
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
